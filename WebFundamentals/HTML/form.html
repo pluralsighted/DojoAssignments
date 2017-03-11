@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Title</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>
+        div.radio-inline label { padding: 0px; vertical-align: bottom }
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+    <div class="col-md-6">
+        <h1>My Registration Form</h1>
+
+        <form action="/customer/add" class="form-horizontal">
+            <div class="form-group">
+                <label for="firstname">First Name</label>
+                <input id="firstname" type="text" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="lastname">Last Name</label>
+                <input id="lastname" type="text" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" type="email" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="pwd">Password</label>
+                <input id="pwd" type="password" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="pwd-check">Password Confirmation</label>
+                <input id="pwd-check" type="password" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="birthday">Birthday</label>
+                <input type="month" id="birthday" min="1900-01" max="2018-01" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <div class="radio-inline"><label><input type="radio" name="gender" value="male" class="form-control" checked>Male</label></div>
+                <div class="radio-inline"><label><input type="radio" name="gender" value="female" class="form-control">Female</label></div>
+                <div class="radio-inline"><label><input type="radio" name="gender" value="other" class="form-control">Other</label></div>
+            </div>
+
+            <div class="form-group">
+                <label for="description">A short description about yourself.</label>
+                <textarea id="description" cols="30" rows="10" class="form-control"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="language">Favorite Language: </label>
+                <select name="language" id="language" class="form-control">
+                    <option value="English">English</option>
+                    <option value="Spanish">Spanish</option>
+                    <option value="French">French</option>
+                    <option value="German">German</option>
+                    <option value="Italian">Italian</option>
+                </select>
+            </div>
+
+            <button class="btn btn-success" type="submit">Submit</button>
+
+        </form>
+    </div>
+</div>
+</body>
+</html>

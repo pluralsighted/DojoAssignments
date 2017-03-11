@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Who is Charlie Rose?</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>
+        h1 span {
+            color: red;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="row">
+        <div class="offset-md-2  col-md-8">
+            <h1>Who is <span>Charlie Rose</span>?</h1>
+
+            <img class="img img-thumbnail"
+                 src="http://bento.cdn.pbs.org/hostedbento-prod/filer_public_thumbnails/filer_public/CharlieRose/CHARLIEROSE_0161.jpg__616x455_q85_subsampling-2.jpg"
+                 alt="Image result for cdn charlie rose picture" width="304" height="225">
+            <h6 class="">Charlie Rose</h6>
+            <p class="lead">
+                Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo
+                luctus.
+            </p>
+
+        </div>
+    </div>
+
+    <div class="offset-md-2  col-md-8">
+        <h2>His early years?</h2>
+        <dl class="row">
+            <dt class="col-sm-3">A list ...</dt>
+            <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+
+            <dt class="col-sm-3">Euismod</dt>
+            <dd class="col-sm-9">Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+            <dd class="col-sm-9 offset-sm-3">Donec id elit non mi porta gravida at eget metus.</dd>
+
+            <dt class="col-sm-3">Malesuada porta</dt>
+            <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
+
+            <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
+            <dd class="col-sm-9">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
+                massa justo sit amet risus.
+            </dd>
+
+            <dt class="col-sm-3">Nesting</dt>
+            <dd class="col-sm-9">
+                <dl class="row">
+                    <dt class="col-sm-4">Nested definition list</dt>
+                    <dd class="col-sm-8">Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.</dd>
+                </dl>
+            </dd>
+        </dl>
+    </div>
+
+    <div class="offset-md-2 col-md-6">
+        <h1>My Registration Form</h1>
+
+        <form action="/customer/add" class="form-horizontal">
+            <div class="form-group">
+                <label for="firstname">First Name</label>
+                <input id="firstname" type="text" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="lastname">Last Name</label>
+                <input id="lastname" type="text" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" type="email" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="pwd">Password</label>
+                <input id="pwd" type="password" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="pwd-check">Password Confirmation</label>
+                <input id="pwd-check" type="password" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="birthday">Birthday</label>
+                <input type="date" id="birthday" min="1900-01-01" max="2018-01-01" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <div class="radio-inline"><label><input type="radio" name="gender" value="male" class="form-control"
+                                                        checked>Male</label></div>
+                <div class="radio-inline"><label><input type="radio" name="gender" value="female"
+                                                        class="form-control">Female</label>
+                </div>
+                <div class="radio-inline"><label><input type="radio" name="gender" value="other"
+                                                        class="form-control">Other</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="description">A short description about yourself.</label>
+                <textarea id="description" cols="30" rows="10" class="form-control"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="language">Favorite Language: </label>
+                <select name="language" id="language" class="form-control">
+                    <option value="English">English</option>
+                    <option value="Spanish">Spanish</option>
+                    <option value="French">French</option>
+                    <option value="German">German</option>
+                    <option value="Italian">Italian</option>
+                </select>
+            </div>
+
+            <button class="btn btn-success" type="submit">Submit</button>
+
+        </form>
+    </div>
+</div>
+</body>
+</html>
